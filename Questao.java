@@ -10,8 +10,8 @@ public class Questao {
 
     double total = 0;
 
-    public boolean isCorreta(String resposta){
-        if(resposta.equalsIgnoreCase(this.correta)){
+    public boolean isCorreta(String resposta) {
+        if (resposta.equalsIgnoreCase(this.correta)) {
             System.out.println("Parabéns resposta Correta!");
             this.total = this.total + 1;
             return true;
@@ -22,18 +22,14 @@ public class Questao {
         }
     }
 
-
-    public void escrevaQuestao(){
-        System.out.println("\n" +   this.pergunta);
-        System.out.println();
-        System.out.println(this.opcaoA);
-        System.out.println(this.opcaoB);
-        System.out.println(this.opcaoC);
-        System.out.println(this.opcaoD);
-        System.out.println(this.opcaoE);
-        System.out.println();
-
-        System.out.print("Digite a opção correta: ");
+    public String toString() {
+        return "\n" + this.pergunta
+                + "\n \n" + this.opcaoA
+                + "\n" + this.opcaoB
+                + "\n" + this.opcaoC
+                + "\n" + this.opcaoD
+                + "\n" + this.opcaoE
+                + "\n \nDigite a opção correta:";
     }
 
 }

@@ -4,7 +4,7 @@ public class Perguntas {
 
     Questao q = new Questao();
 
-    public void pergs(int valor){
+    public void pergs(int valor) {
         Scanner sc = new Scanner(System.in);
 
         switch (valor) {
@@ -192,15 +192,14 @@ public class Perguntas {
                 System.out.print("Error");
                 break;
 
-            
         }
 
-        q.escrevaQuestao();
+        System.out.println(q);
         q.isCorreta(sc.next());
     }
 
     public void totalCorretas() {
-        double totalCem = q.total/15 * 100;
+        double totalCem = q.total / 15 * 100;
         System.out.printf("\nVoce acertou um total de %.0f questões!", q.total);
         System.out.printf("\nIsso equivale a %.2f por cento das questões!", totalCem);
     }
