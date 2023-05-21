@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Perguntas {
 
-    Questao q = new Questao();
+    public static Questao q = new Questao();
 
-    public void pergs(int valor) {
+    public static void pergs(int valor) {
         Scanner sc = new Scanner(System.in);
 
         switch (valor) {
@@ -198,7 +198,7 @@ public class Perguntas {
         q.isCorreta(sc.next());
     }
 
-    public void totalCorretas() {
+    public static void totalCorretas() {
         double totalCem = q.total / 15 * 100;
         System.out.printf("\nVoce acertou um total de %.0f questões!", q.total);
         System.out.printf("\nIsso equivale a %.2f%% das questões!", totalCem);
