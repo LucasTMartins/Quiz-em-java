@@ -201,6 +201,6 @@ public class Perguntas {
     public void totalCorretas() {
         double totalCem = q.total / 15 * 100;
         System.out.printf("\nVoce acertou um total de %.0f questões!", q.total);
-        System.out.printf("\nIsso equivale a %.2f por cento das questões!", totalCem);
+        System.out.printf("\nIsso equivale a %.2f%% das questões!", totalCem);
     }
 }
